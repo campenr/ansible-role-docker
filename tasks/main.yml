@@ -1,0 +1,12 @@
+---
+- import_tasks: server-install.yml
+  tags:
+    - server-install
+    - docker
+    - docker.server-install
+
+- import_tasks: server-configure.yml
+  tags:
+    - server-configure
+    - docker
+    - docker.server-configure
